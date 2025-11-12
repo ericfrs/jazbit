@@ -9,22 +9,39 @@
   };
 
   environment.systemPackages = with pkgs; [
+    # System monitoring & info
     htop
+    btop
     fastfetch
-    obsidian
+    
+    # Terminal utilities
+    bat
+    starship
+    
+    # Compression tools
     zip
     xz
     unzip
     p7zip
-    vscode
+    
+    # Terminal emulator
     kitty
     kitty-themes
-    starship
-    nodejs
-    readest
-    mysql-workbench
+    
+    # Development
+    vscode
     git
+    gh
+    nodejs
+    mysql-workbench
+    
+    # Applications
+    obsidian
+    remnote
+    readest
     google-chrome
+    
+    # GNOME customization
     gnome-tweaks
     adw-gtk3
     gnomeExtensions.appindicator
@@ -39,10 +56,10 @@
     noto-fonts-emoji
     fira-code
     fira-code-symbols
+    jetbrains-mono
+    maple-mono.NF
     inter
     roboto
     ibm-plex
-    jetbrains-mono
-    maple-mono.NF
   ];
 }

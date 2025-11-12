@@ -6,9 +6,11 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "jazbit"; # Define your hostname.
+  networking.hostName = "jazbit";
 
   networking.networkmanager.enable = true;
+  
+  networking.firewall.enable = true;
 
   time.timeZone = "America/Argentina/Buenos_Aires";
 

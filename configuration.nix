@@ -4,11 +4,11 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ./system.nix
-      ./desktop.nix
-      ./packages.nix
-      ./user.nix
-      ./gaming.nix
+      ./modules/system.nix
+      ./modules/desktop.nix
+      ./modules/packages.nix
+      ./modules/user.nix
+      ./modules/gaming.nix
     ];
 
   system.stateVersion = "25.05";

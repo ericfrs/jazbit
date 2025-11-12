@@ -6,13 +6,16 @@
     enable32Bit = true;
   };
 
-  services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+  # X Server and display manager
+  services.xserver = {
+    enable = true;
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;
+    
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
   };
 
   services.pulseaudio.enable = false;
